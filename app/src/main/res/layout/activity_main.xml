@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.eestn4.ortiz.contacto.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="487dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Formulario de contacto"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:layout_alignBaseline="@+id/edt_nombre"
+            android:layout_alignBottom="@+id/edt_nombre"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="29dp"
+            android:text="Email:" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="17dp"
+            android:text="Consulta"
+            android:layout_below="@+id/edt_email"
+            android:layout_alignLeft="@+id/btn_enviar"
+            android:layout_alignStart="@+id/btn_enviar" />
+
+        <EditText
+            android:id="@+id/edt_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txt_titulo"
+            android:layout_alignRight="@+id/txt_titulo"
+            android:layout_below="@+id/txt_titulo"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txt_titulo"
+            android:layout_alignLeft="@+id/edt_nombre"
+            android:layout_alignRight="@+id/txt_titulo"
+            android:layout_alignStart="@+id/edt_nombre"
+            android:layout_below="@+id/edt_nombre"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edt_comentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLength="144"
+            android:singleLine="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/edt_email"
+            android:layout_alignEnd="@+id/edt_email" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: 42614798"
+            android:layout_below="@+id/btn_enviar"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_titulo"
+            android:layout_alignStart="@+id/txt_titulo"
+            android:layout_below="@+id/edt_comentario"
+            android:onClick="enviar"
+            android:text="Enviar Consulta" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direccion:Calle 111 e 19"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_below="@+id/btn_enviar"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <ImageButton
+            android:id="@+id/btn_mapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="-25dp"
+            app:srcCompat="@drawable/map"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="¿Como llegar?"
+            android:textSize="24sp"
+            android:layout_alignTop="@+id/btn_mapa"
+            android:layout_toStartOf="@+id/btn_mapa"
+            android:layout_alignBottom="@+id/btn_mapa"
+            android:layout_toLeftOf="@+id/btn_mapa" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
